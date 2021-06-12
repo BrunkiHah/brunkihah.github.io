@@ -1,0 +1,25 @@
+@import 'variables';
+@import 'nav';
+@import 'part';
+@import 'aboutMe';
+
+
+html {
+    scroll-behavior: smooth;
+    body {
+        margin: 0;
+        padding: 0;
+        background-color: $nav-background;
+        font-family: "Roboto", sans-serif;
+        height: 100vh;
+        header {
+            z-index: 4;
+            height: 100vh;
+        }
+        section{
+            height: 100vh;
+            width: auto;
+
+        }
+      }
+    }
