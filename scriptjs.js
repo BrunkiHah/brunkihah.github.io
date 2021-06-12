@@ -1,6 +1,7 @@
 (function($) { // Begin jQuery
   $(function() { // DOM ready
     // If a link has a dropdown, add sub menu toggle.
+    document.getElementById("tsparticles").even= "none";
     $('nav ul li a:not(:only-child)').click(function(e) {
       $(this).siblings('.nav-dropdown').toggle();
       // Close one dropdown when selecting another
@@ -18,9 +19,6 @@
     // Hamburger to X toggle
     $('#nav-toggle').on('click', function() {
       this.classList.toggle('active');
-      if(this.classList.toggle('active')){
-        $('.container').hide();
-      }
     });
   }); // end DOM ready
 })(jQuery); // end jQuery

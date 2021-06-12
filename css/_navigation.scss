@@ -73,6 +73,7 @@
     // Hamburger nav visible on mobile only
     .nav-mobile {
       display: block;
+      float: right;
     }
     nav {
       width: 100%;
@@ -98,6 +99,8 @@
   @media screen and (min-width: $breakpoint) {
     .nav-list {
       display: block !important;
+      float: right !important;
+
     }
   }
   #nav-toggle {
