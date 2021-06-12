@@ -423,4 +423,10 @@ body {
   text-decoration: none;
   color: #262626;
 }
+
+@media screen and (max-width: 700px) {
+  body {
+    background-color: #262626 !important;
+  }
+}
 /*# sourceMappingURL=main.css.map */
