@@ -35,9 +35,21 @@ body {
       color: white;
     }
     .aboutme{
-      align-content: center;
+      margin: 20px;
+      a {
+        background-color: white;
+        border: 2px solid $nav-background;
+        padding: 10px;
+        
+      }
+
     }
   }
 }
 
 
+@media only screen and (max-width: 800px) {
+  body {
+    background-color: $nav-background;
+  }
+}

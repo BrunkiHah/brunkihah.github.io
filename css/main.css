@@ -413,7 +413,18 @@ body {
 }
 
 .container .content-page1 .aboutme {
-  -ms-flex-line-pack: center;
-      align-content: center;
+  margin: 20px;
+}
+
+.container .content-page1 .aboutme a {
+  background-color: white;
+  border: 2px solid #262626;
+  padding: 10px;
+}
+
+@media only screen and (max-width: 800px) {
+  body {
+    background-color: #262626;
+  }
 }
 /*# sourceMappingURL=main.css.map */
