@@ -20,6 +20,8 @@
       text-decoration: none;
     }
   }
+
+
   
   // Container with no padding for navbar
   .nav-container {
@@ -65,12 +67,15 @@
     position: absolute;
     top: 0;
     right: 0;
-    background: transparent;
+    background: $nav-background;
     height: $nav-height;
     width: $nav-height;
   }
   @media only screen and (max-width: 798px) {
     // Hamburger nav visible on mobile only
+
+
+
     .nav-mobile {
       display: block;
       float: right;
@@ -83,11 +88,13 @@
         li {
           float: none;
           a {
-            padding: 15px;
+            padding: 20px;
             line-height: 20px;
+            text-align: center;
+            background-color: $nav-background transparentize($color: #f0f0f0, $amount: 20);
           }
           ul li a {
-            padding-left: 30px;
+            padding-left: 50px;
           }
         }
       }
@@ -105,7 +112,7 @@
   }
   #nav-toggle {
     position: absolute;
-    left: 18px;
+    left: 29px;
     top: 22px;
     cursor: pointer;
     padding: 10px 35px 16px 0px;

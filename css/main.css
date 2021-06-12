@@ -71,7 +71,7 @@ nav ul li a:visited:not(:only-child):after {
   position: absolute;
   top: 0;
   right: 0;
-  background: transparent;
+  background: #262626;
   height: 70px;
   width: 70px;
 }
@@ -92,11 +92,12 @@ nav ul li a:visited:not(:only-child):after {
     float: none;
   }
   nav ul li a {
-    padding: 15px;
+    padding: 20px;
     line-height: 20px;
+    text-align: center;
   }
   nav ul li ul li a {
-    padding-left: 30px;
+    padding-left: 50px;
   }
   .nav-dropdown {
     position: static;
@@ -112,7 +113,7 @@ nav ul li a:visited:not(:only-child):after {
 
 #nav-toggle {
   position: absolute;
-  left: 18px;
+  left: 29px;
   top: 22px;
   cursor: pointer;
   padding: 10px 35px 16px 0px;
@@ -427,8 +428,39 @@ body {
 }
 
 @media screen and (max-width: 700px) {
-  body {
-    background-color: #262626 !important;
+  .container {
+    font-weight: 400;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .container .content-page1 {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  .container .content-page1 > h1 {
+    color: white;
+    text-align: center;
+  }
+  .container .content-page1 > p {
+    text-align: center;
+    color: white;
+  }
+  .container .content-page1 .aboutme {
+    margin: 20px;
+  }
+  .container .content-page1 .aboutme a {
+    background-color: white;
+    border: 2px solid #262626;
+    padding: 10px;
+    text-decoration: none;
+    color: #262626;
   }
 }
 /*# sourceMappingURL=main.css.map */
