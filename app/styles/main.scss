@@ -9,6 +9,7 @@
 html {
     scroll-behavior: smooth;
     body {
+        text-transform:lowercase !important;
         display: block;
         margin: 0;
         padding: 0;
@@ -16,11 +17,13 @@ html {
         font-family: "Roboto", sans-serif;
         height: 100vh;
         header {
+            text-transform:lowercase !important;
             display: block;
             z-index: 4;
             height: 100vh;
         }
         section{
+            text-transform:lowercase !important;
             height: 100vh;
             width: auto;
 
