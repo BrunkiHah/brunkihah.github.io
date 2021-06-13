@@ -1,0 +1,43 @@
+#page2{
+    margin: 0px 60px;
+    .content {
+    margin: 0px 20px;
+        text-align: center;
+        position: relative;
+        top: 40%;
+        left: 70%;
+        transform: translate(-50%, -50%);
+    
+        > h2{
+            color: white;
+        }
+        
+    }
+    .photo > img {
+        height: 70%;
+
+    }
+    
+}
+
+
+
+@media screen and (max-width: 800px) {
+    .content{
+        text-align: center;
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+    }
+    #page2{
+        background-image: src("img/istockphot");
+    }
+    .photo > img {
+        display: none;
+
+
+    }
+
+  }

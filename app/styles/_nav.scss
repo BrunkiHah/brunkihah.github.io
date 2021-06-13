@@ -1,24 +1,15 @@
 .navigation {
-    z-index: 5;
-    
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  font-size: 20px;
+
       font-family: "Roboto", sans-serif;
       height: $nav-height;
       background: transparent;
       font-weight: 500;
 }
-.brand {
-    position: absolute;
-    padding-left: 20px;
-    float: left;
-    line-height: $nav-height;
-    text-transform: uppercase;
-    font-size: 1.4em;
-    a,
-    a:visited {
-      color: $nav-font-color;
-      text-decoration: none;
-    }
-}
+
 .nav-container {
     max-width: $content-width;
     margin: 0 auto;
@@ -31,7 +22,7 @@
   
   // Navigation
   nav {
-    float: right;
+    align-content: center !important;
     ul {
       list-style: none;
       margin: 0;
