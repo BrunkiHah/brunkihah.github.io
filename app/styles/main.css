@@ -273,6 +273,10 @@ canvas {
   }
 }
 
+#page2 {
+  display: block;
+}
+
 #page2 .content {
   margin: 10% 10%;
   display: -webkit-box;
@@ -288,6 +292,7 @@ canvas {
 
 #page2 .content * > a {
   text-decoration: none;
+  color: #262626;
 }
 
 #page2 .content > h2 {
@@ -312,34 +317,55 @@ canvas {
           transform: translate(-50%, -50%);
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
   #page2 {
     display: block;
   }
   #page2 .content {
     text-align: left;
     position: relative;
-    top: 40%;
-    left: 50%;
+    top: 30%;
+    left: 43%;
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
   }
   #page2 .content > h2 {
+    display: block;
     -ms-flex-line-pack: center;
         align-content: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     color: white;
   }
   #page2 .content .photo > img {
     display: none;
   }
+  #page2 .content .btn-algn {
+    -ms-flex-line-pack: center;
+        align-content: center;
+    position: absolute;
+    top: 130% !important;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
 }
 
-.description a {
-  color: #4A9DF6;
-  text-decoration: none;
+#page3 {
+  margin: 10% 20%;
+}
+
+#page3 .content3 {
+  height: 10%;
+  width: 100%;
+}
+
+#page3 .sites {
+  width: 100%;
+  height: 40%;
+}
+
+#page3 .js-projects {
+  height: 40%;
+  width: 100%;
 }
 
 .btn.is-open ~ .description {
@@ -377,20 +403,20 @@ canvas {
 }
 
 .btn-front:hover {
-  background-color: #404040;
+  background-color: #a6a6a6;
 }
 
 .btn.is-open .btn-front {
   pointer-events: none;
-  line-height: 160px;
+  line-height: 170px;
 }
 
 .btn-back {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: #eee;
-  color: #222;
+  background-color: #262626;
+  color: white;
   -webkit-transform: translateZ(-2px) rotateX(180deg);
           transform: translateZ(-2px) rotateX(180deg);
   overflow: hidden;
@@ -425,12 +451,13 @@ canvas {
 }
 
 .btn-back button.yes {
-  background-color: #2196F3;
-  color: #fff;
+  background-color: white;
+  color: #262626;
+  width: 150px;
 }
 
 .btn-back button.yes:hover {
-  background-color: #51adf6;
+  background-color: #a6a6a6;
 }
 
 .btn-back button.no {
@@ -453,8 +480,8 @@ canvas {
 }
 
 .btn.is-open {
-  width: 400px;
-  height: 160px;
+  width: 300px;
+  height: 170px;
 }
 
 .btn[data-direction="top"].is-open {

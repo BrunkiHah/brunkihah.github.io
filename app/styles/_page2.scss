@@ -1,70 +1,61 @@
-#page2{
-
-    .content {
-*{
-    > a{
-        text-decoration: none;
-    }
+#page2 {
+	display: block;
+	.content {
+		* {
+			>a {
+				text-decoration: none;
+                color: $nav-background;
+			}
+		}
+		margin: 10% 10%;
+		display: flex;
+		text-align: left;
+		position: relative;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		>h2 {
+			text-align: center;
+			align-content: center;
+			justify-content: center;
+			color: white;
+		}
+		.photo>img {
+			height: 70%;
+		}
+		.btn-algn {
+			position: absolute;
+			top: 50%;
+			left: 55%;
+			transform: translate(-50%, -50%);
+		}
+	}
 }
 
-
-
-        margin: 10% 10%;
-        display: flex;
-        text-align: left;
-        position: relative;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    
-        > h2{
-            text-align: center;
-            align-content: center;
-            justify-content: center;
-            color: white;
-        }
-        
-        .photo > img {
-            height: 70%;
-    
-    
-        }
-        .btn-algn{
-        position: absolute;
-        top: 50%;
-        left: 55%;
-        transform: translate(-50%, -50%);
-        }
-    }
-    
-}
-
-
-@media only screen and (max-width: 600px) {
-    #page2{
-        display: block;
-        .content {
-
-
-            text-align: left;
-            position: relative;
-            top: 40%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-        
-            > h2{
-                align-content: center;
-                justify-content: center;
-                color: white;
-            }
-            
-            .photo > img {
-                display: none;
-
-        
-        
-            }
-        }
-        
-    }
+@media only screen and (max-width: 800px) {
+	#page2 {
+		display: block;
+		.content {
+			text-align: left;
+			position: relative;
+			top: 30%;
+			left: 43%;
+			transform: translate(-50%, -50%);
+			>h2 {
+				display: block;
+				align-content: center;
+				color: white;
+			}
+			.photo>img {
+				display: none;
+			}
+			.btn-algn {
+				align-content: center;
+				position: absolute;
+				top: 130% !important;
+				left: 50%;
+				transform: translate(-50%, -50%);
+			}
+		}
+	}
 }
