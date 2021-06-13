@@ -286,6 +286,10 @@ canvas {
           transform: translate(-50%, -50%);
 }
 
+#page2 .content * > a {
+  text-decoration: none;
+}
+
 #page2 .content > h2 {
   text-align: center;
   -ms-flex-line-pack: center;
