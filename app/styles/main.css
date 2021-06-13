@@ -1,6 +1,6 @@
 @charset "UTF-8";
 .navigation {
-  z-index: 1;
+  z-index: 5;
   font-family: "Roboto", sans-serif;
   height: 70px;
   background: transparent;
@@ -284,6 +284,7 @@ html {
 }
 
 html body {
+  display: block;
   margin: 0;
   padding: 0;
   background-color: #262626;
@@ -292,6 +293,7 @@ html body {
 }
 
 html body header {
+  display: block;
   z-index: 4;
   height: 100vh;
 }
