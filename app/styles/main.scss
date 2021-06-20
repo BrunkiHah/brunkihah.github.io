@@ -25,7 +25,7 @@ html {
         }
         section{
             text-transform:lowercase !important;
-            height: 100vh;
+            height: 90vh;
             width: auto;
 
         }
@@ -33,9 +33,3 @@ html {
     }
 
 
-    @media only screen and (max-width: 900px) {
-        canvas {
-            display: none;
-        }
-        
-      }  
