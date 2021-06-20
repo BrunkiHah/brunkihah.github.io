@@ -1,0 +1,493 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap");
+/* General Style */
+html {
+  font-size: 16px;
+}
+:root {
+  --light-red: hsl(356, 100%, 66%);
+  --very-light-red: hsl(355, 100%, 74%);
+  --very-dark-blue: hsl(208, 49%, 24%);
+  --text: hsl(0, 0%, 100%);
+  --footer-text: hsl(240, 2%, 79%);
+  --very-dark-grayish-blue: hsl(207, 13%, 34%);
+  --very-dark-black-blue: hsl(240, 10%, 16%);
+  --font-overpass: "Overpass", sans-serif;
+  --font-ubuntu: "Ubuntu", sans-serif;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+img {
+  width: 100%;
+}
+.intro-main-container {
+  height: 70vh;
+  background: linear-gradient(
+    to right,
+    hsl(13, 100%, 72%),
+    hsl(353, 100%, 62%)
+  );
+  width: 100%;
+  border-bottom-left-radius: 100px;
+}
+
+.intro {
+  height: 100%;
+  width: 100%;
+  background-image: url(images/bg-pattern-intro.svg);
+  background-position: center;
+  border-bottom-left-radius: 100px;
+  display: flex;
+  flex-direction: column;
+  padding: 2% 5%;
+}
+
+.logo {
+  float: left;
+  font-family: overpass, sans-serif;
+  font-weight: 600;
+  color: hsl(0, 0%, 100%);
+  font-size: 3rem;
+  margin-right: 1rem;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 2rem;
+  margin: 0.5rem 0;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  margin: 0 1.5rem;
+  position: relative;
+}
+
+nav ul li a {
+  font-family: ubuntu, sans-serif;
+  text-decoration: none;
+  color: hsl(0, 0%, 100%);
+  font-weight: 500;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+nav ul li.sub-menu::before {
+  content: url(images/icon-arrow-light.svg);
+  position: absolute;
+  right: -20px;
+  transition: 300ms;
+}
+
+.navigation nav ul li ul {
+  position: absolute;
+  left: 0;
+  background: white;
+  padding: 0.5rem;
+  border-radius: 10px;
+  line-height: 1.5;
+  display: none;
+}
+
+.navigation nav ul li.active ul {
+  display: block;
+}
+
+.navigation nav ul li.active::before {
+  content: url(images/icon-arrow-light.svg);
+  transform: rotate(180deg);
+  transition: 300ms;
+}
+
+.navigation nav ul li ul li a {
+  color: black;
+  font-weight: 400;
+}
+
+.navigation nav ul li ul li a:hover {
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.navigation nav ul li ul li {
+  display: block;
+  width: 100%;
+}
+
+button {
+  font-family: ubuntu, sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 30px;
+  cursor: pointer;
+
+}
+
+.login {
+  background: none;
+  color: hsl(0, 0%, 100%);
+}
+
+.white-btn {
+  background: hsl(0, 0%, 100%);
+  color: hsl(353, 100%, 62%);
+}
+
+.white-btn:hover {
+  background: hsla(0, 0%, 100%, 30%);
+  color: hsl(0, 0%, 100%);
+}
+
+.menu-toggle {
+  float: right;
+  line-height: 50px;
+  font-size: 24px;
+  cursor: pointer;
+  display: none;
+}
+
+.intro-txt {
+  margin: 5rem auto;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.main-text {
+  font-family: ubuntu, sans-serif;
+  font-weight: 400;
+  font-size: 3rem;
+  color: hsl(0, 0%, 100%);
+}
+
+.sub-text {
+  font-family: overpass, sans-serif;
+  font-weight: 300;
+  font-size: 1.5rem;
+  color: hsl(0, 0%, 100%);
+}
+
+.intro-btn {
+  margin: 1rem 0;
+}
+
+.learn-more {
+  margin: 0 1.5rem;
+  background: inherit;
+  border: 1px solid hsl(0, 0%, 100%);
+  color: hsl(0, 0%, 100%);
+}
+.learn-more:hover {
+  background: hsl(0, 0%, 100%);
+  color: hsl(353, 100%, 62%);
+}
+
+
+/* Design */
+.design {
+  text-align: center;
+  padding: 0 1rem;
+}
+.design h2 {
+  padding: 5rem 0;
+  color: var(--very-dark-blue);
+  font-size: 1.8rem;
+}
+.design h4 {
+  padding: 2rem 0;
+  color: var(--very-dark-blue);
+  font-size: 1.8rem;
+}
+.design p {
+  color: var(--very-dark-grayish-blue);
+  line-height: 1.5;
+  padding-bottom: 1rem;
+}
+.illustration-desktop {
+  display: none;
+}
+.design-large {
+  display: none;
+}
+/* state */
+.state-section {
+  text-align: center;
+}
+.state-section-lg {
+  display: none;
+}
+.phone {
+  height: 25rem;
+  margin-bottom: -12.5rem;
+}
+.state {
+  background-color: var(--very-dark-blue);
+  background-image: url(./images/bg-pattern-circles.svg);
+  background-size: contain;
+  background-position: center -5rem;
+  background-repeat: no-repeat;
+  padding: 0 1rem;
+  padding-top: 12.5rem;
+  border-radius: 0 5rem 0 5rem;
+}
+.state p {
+  color: var(--text);
+  padding-bottom: 4rem;
+  line-height: 1.5;
+}
+.state h2 {
+  padding: 3rem 0;
+  color: var(--text);
+  font-size: 1.8rem;
+}
+.laptop {
+  padding: 1rem 0;
+}
+.pb {
+  padding-bottom: 5rem;
+}
+/* footer */
+footer {
+  background-color: var(--very-dark-black-blue);
+  display: grid;
+  border-radius: 0 5rem 0 0;
+  text-align: center;
+  margin-top: 3rem;
+}
+.logo-footer {
+  width: 5rem;
+  justify-self: center;
+  padding: 2rem 0;
+}
+.logo-footer-small {
+  display: none;
+}
+.footer-menu {
+  color: var(--footer-text);
+  justify-self: center;
+}
+.product-footer ul {
+  list-style: none;
+}
+.product-footer ul li {
+  padding: 0.2rem 0;
+}
+.product-footer h3 {
+  padding: 1rem 0;
+}
+.header-design {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .design {
+    display: none;
+  }
+  .design-large {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 5rem 0 5rem 5rem;
+  }
+  .header-design {
+    display: block;
+    margin: 0 auto;
+    padding: 3rem;
+    margin-bottom: -10rem;
+    text-align: center;
+    color: var(--very-dark-grayish-blue);
+    font-size: 1.8rem;
+  }
+  .design-large h4 {
+    padding-bottom: 2rem;
+    color: var(--very-dark-blue);
+    font-size: 1.8rem;
+  }
+  .design-text {
+    padding-top: 3.5rem;
+  }
+  .design-large p {
+    padding-bottom: 2.5rem;
+    color: var(--very-dark-grayish-blue);
+    line-height: 1.5;
+  }
+  .illustration-mobile {
+    display: none;
+  }
+  .illustration-desktop {
+    display: block;
+  }
+  .state-section {
+    display: none;
+  }
+  .state-section-lg {
+    display: block;
+    background-color: var(--very-dark-blue);
+    background-image: url(./images/bg-pattern-circles.svg);
+    background-size: contain;
+    background-position: left -10rem;
+    background-repeat: no-repeat;
+    padding: 0 1rem;
+    padding-top: 2rem;
+    border-radius: 0 5rem 0 5rem;
+  }
+  .state-text {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 3rem;
+  }
+  .state-lg {
+    margin: 2rem;
+    color: var(--text);
+    line-height: 1.5;
+  }
+  .state-lg p {
+    padding-top: 1.8rem;
+  }
+  .phone-lg img {
+    /* border: 2px solid gold; */
+    margin-top: -10rem;
+    height: 30rem;
+    width: 30rem;
+  }
+  .free {
+    display: grid;
+  }
+  footer {
+    padding: 1rem 2rem;
+    text-align: start;
+  }
+  .logo-footer {
+    display: none;
+  }
+  .logo-footer-small {
+    display: block;
+    justify-self: start;
+    width: 5rem;
+    margin: 0 3rem;
+  }
+  .footer-menu {
+    display: flex;
+  }
+  .product-footer {
+    padding: 0 2rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .intro-main-container {
+    height: 90vh;
+  }
+  .main-text {
+    font-size: 3rem;
+  }
+  .sub-text {
+    font-size: 1.2rem;
+  }
+  .menu-toggle {
+    display: block;
+  }
+  .intro-btn{
+    display: flex;
+  }
+  .intro-btn button {
+    margin-top: 1rem;
+    margin-left: 2rem;
+    padding: 1rem;
+    justify-items: center;
+  }
+
+  .navigation {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .navigation nav {
+    display: block;
+    background: white;
+    position: absolute;
+    top: -100rem;
+    left: 3rem;
+    width: 85%;
+    height: 80%;
+    text-align: center;
+    padding: 2rem;
+    line-height: 2;
+    border-radius: 20px;
+    box-shadow: 0 7px 10px hsl(207, 13%, 34%);
+    transition: 0.5s;
+  }
+
+  nav.active {
+    top: 4rem;
+  }
+
+  .navigation nav ul {
+    display: block;
+    border-bottom: 1px solid hsl(240, 2%, 79%);
+  }
+
+  nav ul li a {
+    color: hsl(240, 10%, 16%);
+    font-size: 2rem;
+  }
+
+  nav ul li.sub-menu {
+    display: block;
+  }
+
+  .navigation nav ul li.active ul {
+    position: relative;
+    background: hsl(240, 2%, 79%);
+  }
+
+  .navigation nav ul li ul li {
+    width: 100%;
+  }
+
+  .navigation nav ul li ul a {
+    font-size: 1.5rem;
+    line-height: 1.5;
+  }
+
+  .navigation ul li.sub-menu::before {
+    content: url(images/icon-arrow-dark.svg);
+    position: absolute;
+    right: -20px;
+    transition: 300ms;
+  }
+
+  .navigation nav ul li.active::before {
+    content: url(images/icon-arrow-light.svg);
+    transform: rotate(180deg);
+    transition: 300ms;
+  }
+
+  .nav-btn button {
+    display: block;
+    color: hsl(240, 10%, 16%);
+    font-size: 1.5rem;
+    margin: 1rem auto;
+    font-weight: 500;
+  }
+
+  .nav-btn .signup {
+    background: linear-gradient(
+      to right,
+      hsl(13, 100%, 72%),
+      hsl(353, 100%, 62%)
+    );
+    color: white;
+  }
+  
+}
