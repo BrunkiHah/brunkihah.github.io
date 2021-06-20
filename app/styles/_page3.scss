@@ -5,6 +5,9 @@
   
   margin: 10% 20%;
   .content3{
+    display: block;
+    align-items: center;
+    justify-content: center;
       padding-top: 10px;
       text-align: center;
       height: 20%;
@@ -22,4 +25,22 @@
   }
   
 
+}
+
+article{
+  display: block;
+    align-items: center;
+    justify-content: center;
+}
+
+.row1{
+  border-radius: 15px;
+  border: 2px;
+  display: flex
+  align-items: center;
+    justify-content: center;
+}
+.row2{
+  align-items: center;
+    justify-content: center;
 }

@@ -356,6 +356,13 @@ canvas {
 }
 
 #page3 .content3 {
+  display: block;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding-top: 10px;
   text-align: center;
   height: 20%;
@@ -370,6 +377,22 @@ canvas {
 #page3 .content3 > h3 {
   color: white;
   font-weight: 400;
+}
+
+article {
+  display: block;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.row1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .btn.is-open ~ .description {
