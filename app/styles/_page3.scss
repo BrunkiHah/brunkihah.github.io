@@ -1,6 +1,5 @@
 #page3{
   font-family: 'Poppins', sans-serif;
-
   text-align: center;
   
   margin: 10% 20%;
@@ -27,20 +26,44 @@
 
 }
 
-article{
+.stuff{
+  margin: 10px;
   display: block;
     align-items: center;
     justify-content: center;
+    .row1{
+      margin: 30px;
+      padding:50px;
+      border-radius: 15px;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+    }
+    .row2{
+      margin: 30px;
+      border-radius: 15px;
+      padding:50px;
+
+      display: flex;
+      align-items: center;
+        justify-content: center;
+        box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+    }
+
+    a {
+      color: white;
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: 600;
+      transition: 0.4s ease;
+    }
+    a:hover{
+      text-decoration: underline #cccccc;
+
+    }
+    
+
 }
 
-.row1{
-  border-radius: 15px;
-  border: 2px;
-  display: flex
-  align-items: center;
-    justify-content: center;
-}
-.row2{
-  align-items: center;
-    justify-content: center;
-}

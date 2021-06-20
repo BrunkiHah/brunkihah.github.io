@@ -379,7 +379,8 @@ canvas {
   font-weight: 400;
 }
 
-article {
+.stuff {
+  margin: 10px;
   display: block;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -389,10 +390,52 @@ article {
           justify-content: center;
 }
 
-.row1 {
+.stuff .row1 {
+  margin: 30px;
+  padding: 50px;
+  border-radius: 15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+}
+
+.stuff .row2 {
+  margin: 30px;
+  border-radius: 15px;
+  padding: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+}
+
+.stuff a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+
+.stuff a:hover {
+  -webkit-text-decoration: underline #cccccc;
+          text-decoration: underline #cccccc;
 }
 
 .btn.is-open ~ .description {

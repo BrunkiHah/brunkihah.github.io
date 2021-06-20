@@ -133,7 +133,7 @@
       body {
         margin: 0;
           font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-        background: #29343d;
+        background: #3e3e3e;
       }
       
       @supports not (display: grid) {
@@ -282,10 +282,10 @@
         outline: 2px solid #3eabfa;
       }
       
-      .grid .item:nth-child(1)  { background-image: linear-gradient(45deg, #cbabfb 0%, #fb7ef6 60%); }
-      .grid .item:nth-child(2)  { background-image: linear-gradient(45deg, #fb7ef6 0%, #cbabfb 60%); }
-      .grid .item:nth-child(3)  { background-image: linear-gradient(45deg, #70c1fb 0%, #79ebe0 60%); }
-      .grid .item:nth-child(4)  { background-image: linear-gradient(45deg, #79ebe0 0%, #70c1fb 60%); }
+      .grid .item:nth-child(1)  { background: linear-gradient(86deg, rgba(62,62,62,1) 0%, rgba(211,211,211,1) 99%, rgba(133,131,131,1) 100%);}
+      .grid .item:nth-child(2)  { background: linear-gradient(86deg, rgba(62,62,62,1) 0%, rgba(211,211,211,1) 99%, rgba(133,131,131,1) 100%);}
+      .grid .item:nth-child(3)  { background: linear-gradient(86deg, rgba(62,62,62,1) 0%, rgba(211,211,211,1) 99%, rgba(133,131,131,1) 100%);}
+      .grid .item:nth-child(4)  { background: linear-gradient(86deg, rgba(62,62,62,1) 0%, rgba(211,211,211,1) 99%, rgba(133,131,131,1) 100%);}
       .grid .item:nth-child(5),
       .grid .item:nth-child(6),
       .grid .item:nth-child(7),
@@ -295,7 +295,7 @@
       .grid .item:nth-child(11),
       .grid .item:nth-child(12),
       .grid .item:nth-child(13),
-      .grid .item:nth-child(14) { background-image: linear-gradient(45deg, #feeeab 0%, #fb7eb3 60%); }
+      .grid .item:nth-child(14) { background: linear-gradient(86deg, rgba(62,62,62,1) 0%, rgba(211,211,211,1) 99%, rgba(133,131,131,1) 100%);}
 
 
 
