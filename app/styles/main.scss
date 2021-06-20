@@ -5,6 +5,7 @@
 @import 'page2';
 @import 'page3';
 @import 'button';
+@import 'page4';
 
 html {
     scroll-behavior: smooth;
@@ -30,3 +31,11 @@ html {
         }
       }
     }
+
+
+    @media only screen and (max-width: 900px) {
+        canvas {
+            display: none;
+        }
+        
+      }  

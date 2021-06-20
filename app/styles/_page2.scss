@@ -21,7 +21,7 @@
 			color: white;
 		}
 		.photo>img {
-			height: 70%;
+			height: 10%;
 		}
 		.btn-algn {
 			position: absolute;
@@ -32,29 +32,41 @@
 	}
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 900px) {
 	#page2 {
 		display: block;
 		.content {
-			text-align: left;
-			position: relative;
-			top: 30%;
-			left: 43%;
-			transform: translate(-50%, -50%);
+			* {
+				margin: 0;
+				>a {
+					text-decoration: none;
+					color: $nav-background;
+				}
+			}
+			margin: 0;
+
+	
+			display: flex;
+			align-items: center;
+			justify-content: center;
 			>h2 {
-				display: block;
+
+				display: flex;
+				text-align: center;
 				align-content: center;
+				justify-content: space-around;
 				color: white;
+
 			}
 			.photo>img {
 				display: none;
 			}
 			.btn-algn {
-				align-content: center;
-				position: absolute;
-				top: 130% !important;
-				left: 50%;
-				transform: translate(-50%, -50%);
+
+				display: none;
+				align-items: center !important; 
+				justify-content: space-around !important;
+				position:absolute !important;
 			}
 		}
 	}
